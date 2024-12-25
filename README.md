@@ -4,14 +4,14 @@ This Python script scans a network for active devices and retrieves their IP add
 
 How It Works
 
-    ARP Scanning:
+    1.ARP Scanning:
     The script sends ARP (Address Resolution Protocol) requests to devices within a specified network range using scapy. It then listens for ARP replies to identify active devices.
 
-    Threaded Scanning:
+    2.Threaded Scanning:
     To speed up the scanning process, the script uses multithreading. Each IP in the network range is scanned in a separate thread.
 
-    Hostname Resolution:
+    3.Hostname Resolution:
     For each active device, the script attempts to resolve the hostname using socket.gethostbyaddr. If the hostname cannot be resolved, it defaults to "Unknown."
 
-    Output:
+    4.Output:
     The results, including IP addresses, MAC addresses, and hostnames, are displayed in a well-formatted table.
